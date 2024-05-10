@@ -120,6 +120,50 @@
               </button>
             </div>
           </div>
+          <!-- Activate PSTN, this function will only works
+                if the API keys matches the room -->
+          <div class="activate-pstn">
+            <!-- <div class="copy-url-instructions">
+                <h3>Activate SIP/PSTN</h3>
+                <p>This will create SIP endpoints for dialin</p>
+            </div>
+            <label for="endpoint-input"></label>
+            <input
+                type="number"
+                id="endpoint-input"
+                class="url-input"
+                placeholder="Enter a number < 10:"
+                max="9"
+            />
+            <button
+                id="activate-pstn-button"
+                class="button copy-url-button"
+                onclick="activateSipPstn()"
+            >
+                Add Endpoints
+            </button> -->
+
+            <div id="provider-container" class="provider-dropdown hide" >
+              <label for="provider-select">Choose a provider:</label>
+              <select id="provider-select">
+                <option value="signalwire">Signal Wire</option>
+                <option value="twilio">Twilio</option>
+              </select>
+            </div>
+            <div id="room-properties" class="room-props hide">
+              <p>Share PSTN/SIP Details below to invite others</p>
+              <ul id="room-properties-list">
+              </ul>
+            </div>
+            <div class="controls-call-pstn">
+              <div class="dialout-pstn-instructions hide" id="active-dialout">
+                <h3>Dialout to phone</h3>
+                <div id="inputs-container">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Network stats -->
           <div class="controls-stats">
             <dl>
               <h3>Network stats</h3>
