@@ -112,3 +112,6 @@ dist
 
 # Elastic Beanstalk deployment created by GitHub Actions
 deploy.zip
+
+# Local Netlify folder
+.netlify
